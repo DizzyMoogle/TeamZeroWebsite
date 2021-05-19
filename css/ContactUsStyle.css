@@ -1,0 +1,28 @@
+.cu {
+    margin: 1% auto;
+    width: 80%;
+    background-image: linear-gradient( rgba(57, 62, 70, 0.7), rgba(57, 62, 70, 0.7)), url(../images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cu h1 {
+    color: #eeee;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media (max-width:700px) {
+    .cu {
+        margin: 0% auto;
+        padding: 50px 0;
+    }
+    .cu h1 {
+        padding: 1px;
+        margin: .5em auto;
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,123 @@
+:root {
+    --Bright-Gray: #393e46;
+    --Bondi-Blue: #00adb5;
+    --Sinbad: #aad8d3;
+    --Gallery: #eeeeee;
+}
+
+.Projects {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 80px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--Bondi-Blue);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: var(--Bright-Gray);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.row {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.guide-column {
+    flex-basis: 31%;
+    background: var(--Sinbad);
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.guide-column h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 5px 0;
+    color: var(--Bondi-Blue);
+}
+
+.guide-column:hover {
+    box-shadow: 0 0 20px 0px rgba(57, 62, 70, 0.2);
+}
+
+.games {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.grid {
+    flex-basis: 30%;
+    border-radius: 5%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.description {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.description:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.description h3 {
+    width: 100%;
+    color: var(--Gallery);
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.description:hover h3 {
+    bottom: 45%;
+    opacity: 1;
+}
+
+@media (max-width:700px) {
+    .Projects {
+        width: 80%;
+        padding: 25px;
+    }
+    .grid {
+        border-radius: 3%;
+    }
+    .row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,56 @@
+:root {
+    --Bondi-Blue: #00adb5;
+    --Gallery: #eeeeee;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--Gallery);
+    border: 1px solid var(--Gallery);
+    padding: 13px 60px;
+    border-radius: 18px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid var(--Bondi-Blue);
+    background: var(--Bondi-Blue);
+    transition: 1s;
+}
+
+.buttons {
+    display: flex;
+    grid-template-columns: max-content max-content;
+    grid-gap: 15px;
+    justify-content: center;
+    padding: 0;
+}
+
+.buttons li {
+    display: block;
+}
+
+@media (max-width:700px) {
+    .btn {
+        padding: 13px 35px;
+        border-radius: 18px;
+        font-size: 13px;
+    }
+    .buttons {
+        left: 50%;
+        right: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons ul {
+        display: block;
+        left: 50%;
+        right: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,79 @@
+:root {
+    --Bright-Gray: #393e46;
+    --Bondi-Blue: #00adb5;
+    --Sinbad: #aad8d3;
+}
+
+.Team {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.Member-name {
+    text-align: left;
+}
+
+.Team-member {
+    flex-basis: 44%;
+    border-radius: 2%;
+    margin-bottom: 5%;
+    text-align: left;
+    background: var(--Sinbad);
+    padding: 25px;
+    display: flex;
+}
+
+.Team-member img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.Team-member i {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+
+.Team-member h3 {
+    margin-top: 5px;
+    text-align: left;
+    color: var(--Bondi-Blue);
+}
+
+.Team-member p {
+    padding: 0;
+    text-align: left;
+    font-size: 18px;
+}
+
+.Social-media-accounts {
+    text-align: left;
+    padding-bottom: 50px;
+    color: var(--Bright-Gray);
+    /*   margin: 0 50px;
+    padding: 25px 0; */
+}
+
+.Social-media-accounts .fa {
+    cursor: pointer;
+}
+
+@media (max-width:700px) {
+    .Team-member img {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .Team-member h3 {
+        font-size: 14px;
+    }
+    .Social-media-accounts {
+        /*  flex-direction: column; */
+        /* display: inline-flex; */
+        margin: auto;
+        text-align: center;
+    }
+}
